@@ -4,12 +4,20 @@ const hbs = require("hbs");
 
 var app = express();
 
+hbs.registerPartials(__dirname + '/views/partials');
 app.set("view engine", hbs);
 app.use(express.static(__dirname + "/public"));
+hbs.registerHelper('getCurrentYear', function(){
+    return new Date().getFullYear();
+})
+hbs.registerHelper('screamIt', function(text){
+    return text.toUpperCase();
+})
 
 app.get("/",function(req,res){
     res.render('homePage.hbs',{
-        pageName : 'Home Page'
+        pageName : 'Home Page',
+        name : 'Hrithik Naha'
     })
 })
 
