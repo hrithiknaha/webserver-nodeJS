@@ -9,7 +9,7 @@ A simple nodeJS application showing webservers.
 2. To fetch partials content use `{{> filename}}`
 
 
-## Helps in Handlebars
+## Helpers in Handlebars
 
 1. To use helpers or functions in Handlebars use `hbs.registerHelper('helperName', function(){});`.
 
