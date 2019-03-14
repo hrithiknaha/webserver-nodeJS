@@ -18,3 +18,6 @@ A simple nodeJS application showing webservers.
 3. For Helpers with arguments use `{{helper_name arguments}}`
 
 
+### For Maintainance
+Use Middleware without next(), for suspending the process.
+
